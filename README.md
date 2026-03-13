@@ -53,6 +53,10 @@ Quiz CLI is an interactive command-line quiz game written in Node.js. The app lo
   - `src/quiz.js` — quiz engine (`Quiz` class): shuffles questions, asks questions, tracks answers/score, renders results.
   - `src/colors.js` — ANSI styling utilities used by the CLI.
 
+### Components / services
+
+This codebase is intentionally small and keeps most “service” logic inside `src/quiz.js` (the `Quiz` class) and user-interaction helpers inside `src/input.js`. Keeping `index.js` focused on orchestration (menu flow, wiring modules together) is the most consistent pattern used in the current implementation.
+
 ### Notes on tests
 
 - `package.json` provides a `test` script (`node --test`), but this repository currently does **not** include any test files.
@@ -64,6 +68,10 @@ Quiz CLI is an interactive command-line quiz game written in Node.js. The app lo
 
 - **Git**: https://git-scm.com/
 - **Node.js `>=18.0.0`** (includes npm): https://nodejs.org/
+
+### Environment configuration
+
+No environment variables are required by the current source code.
 
 ### Install
 
