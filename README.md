@@ -77,7 +77,7 @@ No environment variables are required by the current source code.
 
 ```bash
 git clone <REPO_URL>
-cd quiz-cli
+cd <repo-directory>
 
 npm install
 ```
